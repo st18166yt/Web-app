@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" }},
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { matchFontHeight: false },
+      displayAlign: "left",
+      displayIndent: "2em"
+    });
+  </script>
+</head>
+<body>
+    <h3>練習問題</h3>
+    <p>数学の練習問題を解くと頭の体操になります。ぜひ挑戦してみましょう。</p>
+    <p>＜問１＞</p>
+    <p>次の公式は一般に何とよばれているでしょうか？</p>
+    \[
+    x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+    \]
+    <form action="/practice" method="POST" enctype="multipart/form-data">
+    <div>
+        <label for="kai">解の公式：</label>
+        <input type="radio" name="radio" value="解">
+    </div>
+    <div>
+        <label for="renritsu">連立方程式：</label>
+        <input type="radio" name="radio" value="連立">
+    </div>
+    <div>
+        <label for="euler">オイラーの公式：</label>
+        <input type="radio" name="radio" value="オイラー">
+    </div>
+    <div>
+        <label for="san">三平方の定理：</label>
+        <input type="radio" name="radio" value="三平方">
+    </div>
+  </form>
+    <p><font color="red">{{answer1}}</font></p>
+
+
+    <p>＜問２＞</p>
+    <p>次の計算問題の答えを選べ。</p>
+    \[
+    8 + 3 × 4
+    \]
+    <form action="/practice" method="POST" enctype="multipart/form-data">
+    <div>
+        <label for="l">20：</label>
+        <input type="radio" name="radio" value="l">
+    </div>
+    <div>
+        <label for="i">5：</label>
+        <input type="radio" name="radio" value="i">
+    </div>
+    <div>
+        <label for="j">10：</label>
+        <input type="radio" name="radio" value="j">
+    </div>
+    <div>
+        <label for="k">15：</label>
+        <input type="radio" name="radio" value="k">
+    </div>
+  </form>
+    <p><font color="red">{{answer2}}</font></p>
+
+    <p>＜問３＞</p>
+    <p>次の計算問題の答えを選べ。</p>
+    \[
+    -56 ÷ (-14 + 6)
+    \]
+    <form action="/practice" method="POST" enctype="multipart/form-data">
+    <div>
+        <label for="m">5：</label>
+        <input type="radio" name="radio" value="m">
+    </div>
+    <div>
+        <label for="n">6：</label>
+        <input type="radio" name="radio" value="n">
+    </div>
+    <div>
+        <label for="o">7：</label>
+        <input type="radio" name="radio" value="o">
+    </div>
+    <div>
+        <label for="p">8：</label>
+        <input type="radio" name="radio" value="p">
+    </div>
+  </form>
+    <p><font color="red">{{answer3}}</font></p>
+
+    <p>＜問４＞</p>
+        <p>空欄に当てはまる数を答えよ。</p>
+        <p>(1)</p>
+        \[
+        \frac{□}{8} = \frac{5}{4} × 6
+        \]
+        <!-- 60 -->
+        <form action="/practice" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="a">10：</label>
+            <input type="radio" name="radio" value="a">
+        </div>
+        <div>
+            <label for="b">20：</label>
+            <input type="radio" name="radio" value="b">
+        </div>
+        <div>
+            <label for="c">30：</label>
+            <input type="radio" name="radio" value="c">
+        </div>
+        <div>
+            <label for="d">60：</label>
+            <input type="radio" name="radio" value="d">
+        </div>
+      </form>
+        <p><font color="red">{{answer4}}</font></p>
+
+        <p>(2)</p>
+        \[
+        \frac{□}{2} = \frac{375}{100} × 4
+        \]
+        <!-- 30 -->
+        <form action="/practice" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="e">5：</label>
+            <input type="radio" name="radio" value="e">
+        </div>
+        <div>
+            <label for="f">10：</label>
+            <input type="radio" name="radio" value="f">
+        </div>
+        <div>
+            <label for="g">15：</label>
+            <input type="radio" name="radio" value="g">
+        </div>
+        <div>
+            <label for="h">30：</label>
+            <input type="radio" name="radio" value="h">
+        </div>
+        <p><font color="red">{{answer5}}</font></p>
+        <div>
+    			<input type="submit" value="正解を表示">
+    		</div>
+      </form>
+</body>
+</html>
