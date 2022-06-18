@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+html,body {
+	overflow-x: hidden;
+    min-height: 100%;
+    font-size: 18px;
+}
+body {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	-webkit-text-size-adjust: none;
+  background: #fff;
+	color: #555;
+	line-height: 2;
+}
+dd {margin: 0;}
+section + section {
+	padding-top: 50px;
+}
+a {
+	color: #555;
+}
+a:hover {
+	color: #999;
+}
+header {
+    text-align: center;
+    padding-top: 30px;
+}
+header logo img {
+    width: 400px;
+    padding: 0px 20px;
+}
+#menubar ul {
+    list-style: none;
+	text-align: center;
+  margin: 20px 70px;
+}
+#menubar a {
+	display: block;
+    text-decoration: none;
+	padding: 0 20px;
+}
+#menubar li {
+	display: inline-block;
+	text-align: center;
+  position: relative;
+}
+#menubar li::before {
+  content: "";
+  background: #ccc;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+	transform: scaleX(0);
+}
+#menubar li:hover::before {
+	transform: scaleX(1);
+}
+main {
+  display: block;
+  margin: 50px 70px;
+}
+main h2 {
+  display: inline-block;
+	font-size: 1.6rem;
+	margin-bottom: 50px;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #ccc;
+}
+main h3 {
+	font-size: 1.4rem;
+	margin-bottom: 40px;
+}
+main p {
+	margin-bottom: 40px;
+}
+h2 + h3, h2 + p, h3 + p {
+    margin-top: -20px;
+}
+footer small {font-size: 100%;}
+footer {
+	font-size: 0.6rem;
+	text-align: center;
+	padding: 20px;
+}
+ul.icon {
+	list-style: none;
+	margin: 0;padding: 0;
+	margin-bottom: 30px;
+}
+ul.icon li {
+	display: inline-block;
+}
+ul.icon img {
+	width: 30px;
+}
+ul.icon img:hover {
+	opacity: 0.8;
+}
+#new {
+	display: flex;
+	flex-wrap: wrap;
+}
+#new dt,
+#new dd {
+	border-bottom: 1px solid #eee;
+	padding: 5px 0;
+}
+#new dt {
+	width: 8em;
+}
+#new dd {
+	width: calc(100% - 8em);
+}
